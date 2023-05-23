@@ -1,0 +1,43 @@
+/* PC */
+
+.menu-responsive {
+    display: none;
+}
+
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 0 50px;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 120%;
+    height: 60px;
+    z-index: 999;
+    border-bottom-right-radius: 100%;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.navul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 30vw;
+    font-size: 1.2rem;
+}
+
+
+/* Mobile and Tablet */
+
+@media screen and (max-width: 1024px) {
+    .navbar{
+        display: none;
+    }
+}
