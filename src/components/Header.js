@@ -9,7 +9,29 @@ import twitter from "../utilities/imgs/twitter-svgrepo-com.svg";
 
 function Header() {
     useEffect(() => {
-        
+        let ouvert = false;
+        const opening = document.querySelector(".opening");
+        const menu = document.querySelector(".menu-ouvrant");
+
+        opening.addEventListener("click", () => {
+            menu.style.right = "0";
+            menu.style.animation = "rtol .2s ease forwards";
+            menu.style.display = "flex";
+            ouvert = !ouvert;
+        });
+
+        document.addEventListener("click", (e) => {
+            if(ouvert){
+                if(e.target.className !== 'premier' && e.target.className !== 'opening'){
+                    menu.style.animation = "ltor .2s ease forwards";
+                    menu.style.right = "-49%";
+                    setTimeout(() => {
+                        menu.style.display = "none";
+                    }, 200);
+                    ouvert = !ouvert;
+                }
+            }
+        });
     });
     return (
         <div className="header">
@@ -77,13 +99,13 @@ function Header() {
 
                     <div className="sec-int">
                         <div className="second">
-                            <a href="https://github.com/WadeeKT">
+                            <a title="My GitHub !" target="_blank" rel="noreferrer" href="https://github.com/WadeeKT">
                                 <img className="reseaux github" src={github} alt="github profil"/>
                             </a>
-                            <a href="https://twitter.com/WadeeKT">
+                            <a title="My Twitter !" target="_blank" rel="noreferrer" href="https://twitter.com/WadeeKT">
                                 <img className="reseaux twitter" src={twitter} alt="twitter profil"/>
                             </a>
-                            <a href="https://www.linkedin.com/in/thomas-sanna-b74600277/">
+                            <a title="My Linkedin !"  target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/thomas-sanna-b74600277/">
                                 <img className="reseaux linkedin" src={linkedin} alt="linkedin profil"/>
                             </a>
                         </div>
