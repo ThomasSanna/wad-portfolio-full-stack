@@ -7,4 +7,4 @@ function Background() {
             <source src={background} type="video/mp4" />
         </video>
     );
-};
+}; 
