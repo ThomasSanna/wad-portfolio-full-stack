@@ -12,7 +12,7 @@ A bientôt !
 
 Si vous souhaitez me contacter, vous pouvez me joindre à cette adresse mail : `thomassanna1e@gmail.com`
 
-# English
+# English 
 
 Here is a portfolio project dev/creations.
 It is under development, and will be updated regularly.
