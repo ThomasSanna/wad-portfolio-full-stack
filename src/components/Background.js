@@ -1,10 +1,12 @@
 import React from "react";
-import background from "../utilities/videos/BackgroundHome.mp4";
+import background from "../utilities/videos/background-image.png";
+import '../styles/Background.css'
 
 function Background() {
     return(
-        <video autoPlay muted loop id="VideoBackground">
-            <source src={background} type="video/mp4" />
-        </video>
+        <img src={background} alt="" id="VideoBackground"/>
+
     );
-}; 
+};
+
+export default Background;
