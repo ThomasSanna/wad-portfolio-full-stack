@@ -25,10 +25,11 @@ function Header() {
             if(ouvert){
                 if(e.target.className !== 'premier' && e.target.className !== 'opening'){
                     menu.style.animation = "ltor .2s ease forwards";
-                    menu.style.right = "-49%";
                     setTimeout(() => {
+                        menu.style.right = "-49vw";
                         menu.style.display = "none";
-                    }, 300);
+                    }, 200);
+
                     ouvert = !ouvert;
                 }
             }
