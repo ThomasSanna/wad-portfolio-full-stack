@@ -27,12 +27,13 @@ function Header() {
                     menu.style.right = "-49%";
                     setTimeout(() => {
                         menu.style.display = "none";
-                    }, 200);
+                    }, 300);
                     ouvert = !ouvert;
                 }
             }
         });
     });
+
     return (
         <div className="header">
             <div className="navbar">
@@ -40,11 +41,6 @@ function Header() {
                     <li>
                         <NavLink to="/" exact className="navlink-pc-img">
                                 <img className="nav-img" src={logowad} alt="Logo WadeeKT Envoie vers Home" />
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/" exact activeClassName="active" className="navlink-pc">
-                            Home
                         </NavLink>
                     </li>
                     <li>

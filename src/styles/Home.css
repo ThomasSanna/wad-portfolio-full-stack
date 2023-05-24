@@ -1,0 +1,174 @@
+
+
+.home {
+  filter: blur(10px);
+  transition: filter 2s;
+}
+
+.home-enter {
+  filter: blur(0);
+}
+
+#VideoHome{
+    width: auto;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+/* Mobile Tablet First */
+
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+.home-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 0 0 1000px rgba(202, 193, 255, 0.24);
+    box-shadow: 0 0 1000px 0 rgba(194, 233, 255, 0.719);
+}
+
+.play-pause-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 8%;
+    padding: 0 7px 0 0;
+    filter: invert(1);
+}
+
+.play-pause-button:hover{
+    opacity: 1;
+    scale: 1.1;
+}
+
+.play-pause-button:active{
+    opacity: .7;
+    scale: .95;
+}
+
+.play-pause-button{
+    opacity: .7;
+    transition: all .1s ease-in-out;
+    width: auto;
+    height: 20px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.profile-container{
+    height: 92%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.div-reseaux{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+.reseaux-image{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer;
+    filter: invert(1);
+    opacity: .7;
+    transition: all .2s ease-in-out;
+}
+.reseaux-image:hover{
+    opacity: 1;
+    scale: 1.1;
+    filter: invert(99%) sepia(41%) saturate(125%) hue-rotate(148deg) brightness(116%) contrast(100%) !important;
+}
+
+.reseaux-image:active{
+    opacity: .7;
+    scale: .95;
+}
+
+.profile-image{
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+    opacity: .85;
+    transition: all .2s ease-in-out;
+}
+
+.profile-image:hover{
+    opacity: 1;
+    scale: 1.05;
+}
+
+.profile-image:active{
+    opacity: .7;
+    scale: .95;
+}
+
+.profile-text{
+    text-align: center;
+}
+
+.profile-name{
+    opacity: .94;
+    font-size: 2.2rem;
+    margin-top: -5px;
+}
+
+.profile-title{
+    opacity: .85;
+    font-size: 1.1rem;
+}
+
+.div-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-button{
+    margin-top: 10px;
+    border: none;
+    height: 30px;
+}
+
+/* PC */
+
+@media (min-width: 1024px) {
+
+}

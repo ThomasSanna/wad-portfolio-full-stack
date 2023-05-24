@@ -14,7 +14,8 @@
 
 body {
     background-color: #f1f1f1;
-}
+    overflow-x: hidden;
+  }
 
 .container {
     width: 100%;
