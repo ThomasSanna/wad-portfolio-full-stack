@@ -3,6 +3,7 @@
 .home {
   filter: blur(10px);
   transition: filter 2s;
+  user-select: none;
 }
 
 .home-enter {
@@ -36,7 +37,7 @@
     justify-content: center;
     align-items: center;
     width: 300px;
-    height: 50vh;
+    height: 480px;
     background-color: rgba(255, 255, 255, 0);
     border-radius: 10px;
     display: flex;
@@ -164,11 +165,52 @@
 .profile-button{
     margin-top: 10px;
     border: none;
-    height: 30px;
+    height: 40px;
+    padding: 0 20px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: rgba(120, 146, 231, 0.103);
+    transition: all .2s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.699);
+}
+
+.profile-button:hover{
+    opacity: 1;
+    background-color: rgba(8, 37, 75, 0.651);
+    width: 220px;
+    box-shadow: 0 0 5px 0 rgba(194, 233, 255, 0.719);
+}
+
+.profile-button:hover a{
+    opacity: 1;
+}
+
+.profile-button:active{
+    opacity: .7;
+    scale: .95;
+}
+
+.profile-button a{
+    color: white;
+    opacity: .85;
 }
 
 /* PC */
 
 @media (min-width: 1024px) {
+    .home-card{
+        height: 480px;
+    }
 
+    .play-pause-container{
+        height: 10%;
+    }
+
+    .play-pause-button{
+        margin: 10px;
+    }
+
+    #VideoHome{
+        width: 100vw;
+    }
 }
