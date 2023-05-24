@@ -13,11 +13,14 @@ function Header() {
         let ouvert = false;
         const opening = document.querySelector(".opening");
         const menu = document.querySelector(".menu-ouvrant");
+        const ecranblur = document.querySelector(".ecrannoir");
 
         opening.addEventListener("click", () => {
             menu.style.right = "0";
             menu.style.animation = "rtol .2s ease forwards";
             menu.style.display = "flex";
+            ecranblur.style.display = "block";
+            ecranblur.style.opacity = "1";
             ouvert = !ouvert;
         });
 
@@ -25,8 +28,10 @@ function Header() {
             if(ouvert){
                 if(e.target.className !== 'premier' && e.target.className !== 'opening'){
                     menu.style.animation = "ltor .2s ease forwards";
+                    ecranblur.style.opacity = "0";
                     setTimeout(() => {
                         menu.style.right = "-49vw";
+                        ecranblur.style.display = "none";
                         menu.style.display = "none";
                     }, 200);
 
@@ -38,6 +43,9 @@ function Header() {
 
     return (
         <div>
+            <div className="ecrannoir">
+                
+            </div>
             <div className="marginbot">
                 
             </div>
