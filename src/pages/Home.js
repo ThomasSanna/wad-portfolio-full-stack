@@ -10,6 +10,7 @@ import github from "../utilities/imgs/github-142-svgrepo-com.svg";
 import linkedin from "../utilities/imgs/linkedin-svgrepo-com.svg";
 import twitter from "../utilities/imgs/twitter-svgrepo-com.svg";
 import email from "../utilities/imgs/email.svg";
+import HeaderHome from "../components/HeaderHome";
 
 function Home() {
   const [isMounted, setIsMounted] = useState(false);
@@ -33,12 +34,14 @@ function Home() {
   };
 
   return (
+      
     <div className={`home ${isMounted ? "home-enter" : ""}`}>
       <video autoPlay muted loop id="VideoHome">
         <source src={background} type="video/mp4" />
       </video>
 
       <div className="home-container">
+      <HeaderHome />
         <div className="home-card">
           <div className="play-pause-container">
             <img
@@ -70,54 +73,54 @@ function Home() {
               </button>
             </div>
             <div className="div-reseaux">
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://github.com/WadeeKT"
-              >
-                <img
-                  className="reseaux-image github"
-                  src={github}
-                  alt="logo github"
-                  title="My Github !"
-                />
-              </a>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://www.linkedin.com/in/thomas-sanna-b74600277/"
-              >
-                <img
-                  className="reseaux-image linkedin"
-                  src={linkedin}
-                  alt="logo linkedin"
-                  title="My Linkedin !"
-                />
-              </a>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://twitter.com/WadeeKT"
-              >
-                <img
-                  className="reseaux-image twitter"
-                  src={twitter}
-                  alt="logo twitter"
-                  title="My Twitter !"
-                />
-              </a>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="mailto:thomassanna1e@gmail.com"
-              >
-                <img
-                  className="reseaux-image email"
-                  src={email}
-                  alt="logo email"
-                  title="Contact me !"
-                />
-              </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://github.com/WadeeKT"
+            >
+              <img
+                className="reseaux-image github"
+                src={github}
+                alt="logo github"
+                title="My Github !"
+              />
+            </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.linkedin.com/in/thomas-sanna-b74600277/"
+            >
+              <img
+                className="reseaux-image linkedin"
+                src={linkedin}
+                alt="logo linkedin"
+                title="My Linkedin !"
+              />
+            </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://twitter.com/WadeeKT"
+            >
+              <img
+                className="reseaux-image twitter"
+                src={twitter}
+                alt="logo twitter"
+                title="My Twitter !"
+              />
+            </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="mailto:thomassanna1e@gmail.com"
+            >
+              <img
+                className="reseaux-image email"
+                src={email}
+                alt="logo email"
+                title="Contact me !"
+              />
+            </a>
             </div>
           </div>
         </div>

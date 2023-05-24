@@ -38,12 +38,15 @@ function Header() {
 
     return (
         <div>
+            <div className="marginbot">
+                
+            </div>
             <Background />
             <div className="header">
                 <div className="navbar">
                     <ul className="navul">
                         <li>
-                            <NavLink to="/" exact className="navlink-pc-img">
+                            <NavLink to="/" className="navlink-pc-img">
                                     <img className="nav-img" src={logowad} alt="Logo WadeeKT Envoie vers Home" />
                             </NavLink>
                         </li>
@@ -72,7 +75,7 @@ function Header() {
                         <div className="premier">
                             <ul className="liste-onglets">
                                 <li>
-                                    <NavLink to="/" exact activeClassName="menu-active" className="menu-texte">
+                                    <NavLink to="/" activeClassName="menu-active" className="menu-texte">
                                         Home
                                     </NavLink>
                                 </li>

@@ -1,0 +1,209 @@
+.h-header {
+  width: 100vw;
+  z-index: 1000;
+}
+
+.h-opening {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding-bottom: 35px;
+  font-size: 3.9rem;
+  transform: rotate(90deg);
+  cursor: pointer;
+  position: fixed;
+  top: 2vh;
+  right: 2vw;
+  transition: all 0.2s ease-in-out;
+  content: none;
+  user-select: none;
+  color: rgba(255, 255, 255, 0.836);
+  box-shadow: 0 0 30px 0 rgba(137, 178, 255, 0.76);
+  backdrop-filter: blur(1px);
+  background-color: #051c5c3b;
+}
+
+.h-opening:hover {
+  scale: 1.05;
+  box-shadow: 0 0 50px 0 rgba(210, 253, 255, 0.925);
+  background-color: #0000000e;
+  backdrop-filter: blur(2px);
+  transform: rotate(0deg);
+  color: white;
+}
+
+.h-opening:active {
+  scale: 0.8;
+}
+
+.h-menu-responsive {
+  display: flex;
+}
+
+.h-logo-menu {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  margin-top: 0;
+  filter: invert(0.6);
+}
+
+.h-logo-menu:hover {
+  scale: none;
+  filter: invert(0.8);
+}
+
+.h-active:hover {
+  color: #fff !important;
+}
+
+.h-image-menu {
+  width: 30%;
+  height: 0;
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.h-menu-ouvrant {
+  display: none;
+
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  right: -49vw;
+  top: 0;
+  background-color: rgba(1, 31, 68, 0.671);
+  backdrop-filter: blur(5px);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  height: 100vh;
+  width: 70vw;
+  max-width: 400px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+@keyframes rtol {
+  0% {
+    right: -49vw;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes ltor {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -70vw;
+  }
+}
+
+.h-premier {
+  display: flex;
+  height: 90%;
+  width: 70vw;
+  max-width: 400px;
+}
+
+.h-liste-onglets {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 60%;
+  width: 100%;
+  margin-top: 10%;
+  padding: 0 9px;
+}
+
+.h-liste-onglets li {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  color: #fcfcfc !important;
+  font-weight: bold;
+}
+
+.active:hover,
+.active:active {
+  color: #ffffff !important;
+}
+
+.h-menu-texte {
+  color: rgb(228, 228, 228);
+  text-align: start;
+  font-size: 2rem;
+  padding: 25px 20px;
+  border-radius: 20px;
+  width: 100%;
+  transition: all 0.1s ease-in-out !important;
+}
+
+.h-menu-texte:hover,
+.h-menu-texte:active {
+  color: #e4e4e4;
+  transition: all 0.1s ease-in-out !important;
+  background-color: #7adce01e;
+}
+
+.h-sec-int {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.h-second {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20%;
+  width: 60%;
+  margin-right: 5%;
+}
+
+.h-reseaux {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  filter: invert(0.7);
+}
+
+.h-github {
+  height: 48px;
+  width: 48px;
+}
+
+.h-github:hover {
+  filter: invert(0.9);
+}
+
+.h-twitter:hover {
+  filter: invert(0.9);
+}
+
+.h-linkedin:hover {
+  filter: invert(0.9);
+}
+
+@media screen and (min-width : 1024px) {
+    .h-menu-ouvrant{
+        width: 40vw;
+        max-width: 600px;
+    }
+
+    .active:hover,
+    .active:active {
+        color: #ffffff !important;
+    }
+}

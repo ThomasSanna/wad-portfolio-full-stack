@@ -13,11 +13,11 @@
 }
 
 .navbar {
-  background-color: #ffffff11;
+  background-color: #ffffff00;
   backdrop-filter: blur(5px);
-  border-bottom: .5px solid #c8e2ff;
-  box-shadow: 0 0 10px 0 rgba(187, 233, 255, 0.548);
-  padding: 0 50px;
+  border-bottom: 0.5px solid #c8e2ff;
+  box-shadow: 0 0 50px 0 rgba(5, 113, 163, 0.548);
+  padding: 0 60px;
   position: fixed;
   top: 0;
   left: 0;
@@ -41,12 +41,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 26px;
+  padding: 0 40px;
   border-bottom-left-radius: 20%;
   border-bottom-right-radius: 20%;
   position: relative;
   color: #ebebebcc;
   transition: all 0.1s ease-in-out;
+  font-size: 1.5rem;
 }
 
 .navlink-pc:hover {
@@ -112,7 +113,6 @@
 /* Mobile and Tablet */
 
 @media screen and (max-width: 1024px) {
-  
   .navbar {
     display: none;
   }
@@ -147,7 +147,7 @@
   }
 
   .opening:active {
-    scale: .8;
+    scale: 0.8;
   }
 
   .menu-responsive {
@@ -291,14 +291,14 @@
   }
 
   .github:hover {
-    filter: invert(.9)
+    filter: invert(0.9);
   }
 
   .twitter:hover {
-    filter: invert(.9)
+    filter: invert(0.9);
   }
 
   .linkedin:hover {
-    filter: invert(.9)
+    filter: invert(0.9);
   }
 }
