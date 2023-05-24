@@ -1,0 +1,114 @@
+.logo-page-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-page-wad{
+    filter: invert(1);
+    object-fit: cover;
+    width: auto;
+    text-align: center;
+    height: 100px;
+}
+
+.page-container h1{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 20px;
+}
+.liens{
+    color: rgb(170, 218, 255);
+    text-decoration: none;
+}
+
+.liens:hover{
+    text-decoration: underline;
+}
+
+.sections{
+    background-color: rgba(23, 35, 68, 0.568);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.div-title-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.title-section{
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.presentation-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sections p{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: start;
+    margin-top: 10px;
+}
+
+.bio h3{
+    font-size: 26px;
+    color: rgba(255, 255, 255, 0.911);
+    text-align: start;
+    margin-bottom: 25px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.contact-section{
+    user-select: none;
+    cursor: pointer;
+}
+
+.liens-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+@media screen and (min-width : 1024px) {
+    .sections{
+        background-color: rgba(8, 33, 58, 0.185);
+        box-shadow: 0px 0px 10px 0px rgba(8, 177, 255, 0.178);
+    }
+    .liens-cont{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .sections{
+        width: 50%;
+        margin: 30px auto;
+    }
+
+    .contact-section{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

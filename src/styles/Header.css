@@ -142,6 +142,7 @@
     box-shadow: 0 0 30px 0 rgba(137, 178, 255, 0.76);
     backdrop-filter: blur(1px);
     background-color: #051c5c3b;
+    z-index: 99;
   }
 
   .opening:hover {
@@ -166,7 +167,7 @@
     width: 100px;
     object-fit: cover;
     margin-top: 0;
-    filter: invert(0.6);
+    filter: invert(.85);
   }
 
   .logo-menu:hover {
@@ -202,6 +203,7 @@
     width: 70vw;
     max-width: 400px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    z-index: 100;
   }
 
   @keyframes rtol {
