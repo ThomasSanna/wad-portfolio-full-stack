@@ -1,0 +1,41 @@
+.login-fieldset{
+    width: 50%;
+    min-width: 300px;
+    margin: 0 auto;
+    border:none;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #0c1e3817;
+    box-shadow: 0 0 50px 0 rgba(200, 217, 255, 0.514);
+    backdrop-filter: blur(10px);
+}
+
+.login-cont-cont{
+    width: 100vw;
+    height: 100vh;
+    padding: 20vh 50px;
+}
+
+.login-legend{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin: 20px;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #0c1e385d;
+    color: #fff;
+}
+
