@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header.js";
 import "../styles/Contact.css";
 import "../styles/reset.css";
@@ -8,21 +8,27 @@ import github from "../utilities/imgs/github-142-svgrepo-com.svg";
 import twitter from "../utilities/imgs/twitter-svgrepo-com.svg";
 
 function Contact() {
+
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    document.title = "WadeeKT - Contact Me";
+  });
+
   return (
-    <div>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha384-e2NqBzzw5b9caQ7e3nKm1RkCdFT+KhO7YMyt+JhzA1aB1g9/AK3OW0h4Sx9w9BrB"
-        crossorigin="anonymous"
-      />
+    <div className={`b-contact ${isMounted ? "b-contact-enter" : ""}`}>
       <Header />
-      <div className="page-container">
+      <div className="page-container contact-container">
         <h1>Contact Me</h1>
         <span className="logo-page-cont">
           <img className="logo-page-wad" src={logowad} alt="Logo WadeeKT" />
         </span>
         <div className="sections">
+          <div className="i-reseaux-cont-cont">
             <div className="i-reseaux-cont">
               <a
                 title="My GitHub !"
@@ -65,6 +71,7 @@ function Contact() {
                     <button type="submit">Send</button>
                 </form>
             </div>
+          </div>
         </div>
       </div>
     </div>

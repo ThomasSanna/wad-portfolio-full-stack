@@ -76,7 +76,7 @@
   position: absolute;
   right: -49vw;
   top: 0;
-  background-color: rgba(1, 31, 68, 0.671);
+  background:linear-gradient(90deg, rgba(7, 48, 99, 0.418) 0%, rgba(6, 46, 95, 0.438) 50%, rgba(16, 45, 80, 0.308) 100%);
   backdrop-filter: blur(5px);
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;

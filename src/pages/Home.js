@@ -16,6 +16,10 @@ function Home() {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    document.title = "WadeeKT - Welcome";
+  });
+
+  useEffect(() => {
     setIsMounted(true);
   }, []);
 

@@ -1,0 +1,9 @@
+.b-portfolio {
+    filter: blur(10px);
+    transition: filter .3s;
+    z-index: -1;
+  }
+  
+  .b-portfolio-enter {
+    filter: none;
+  }

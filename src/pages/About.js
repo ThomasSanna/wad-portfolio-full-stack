@@ -1,13 +1,24 @@
 import Header from "../components/Header.js";
-import React from "react";
+import React, {useEffect, useState} from "react";
 import "../styles/About.css";
 import "../styles/reset.css";
 import logowad from "../utilities/imgs/logowad.png";
 import { NavLink } from "react-router-dom";
 
 function About() {
+
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    document.title = "WadeeKT - About Me";
+  });
+
   return (
-    <div>
+    <div className={`b-about ${isMounted ? "b-about-enter" : ""}`}>
       <Header />
       <div className="page-container">
         <h1>About Me</h1>
@@ -20,7 +31,7 @@ function About() {
               <h2 className="title-section">Presentation</h2>{" "}
             </div>
             <div className="bio">
-              <h3>SANNA (WadeeKT) Thomas</h3>
+              <h3>SANNA "WadeeKT" Thomas</h3>
               <p>
                 I am a passionate front-end web developer with nearly a year of
                 experience in the field. My goal is to create exceptional online
@@ -53,7 +64,7 @@ function About() {
         <NavLink to="/contact">
           <section className="contact-section sections">
             <div className="div-title-section">
-              <h2 className="title-section">Contact</h2>
+              <h2 className="title-section title-contact-section">Contact</h2>
             </div>
 
             <div className="contact">

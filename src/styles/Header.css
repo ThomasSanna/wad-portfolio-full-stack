@@ -14,6 +14,7 @@
 
 .ecrannoir{
   display: none;
+  z-index: 3;
 }
 
 .navbar {
@@ -36,7 +37,7 @@
   font-weight: bold;
 }
 
-.active:hover {
+.navul .active:hover {
   color: #0d2041 !important;
 }
 
@@ -113,6 +114,8 @@
   width: 30vw;
   font-size: 1.2rem;
 }
+
+
 
 /* Mobile and Tablet */
 
@@ -192,7 +195,7 @@
 
     flex-direction: column;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
     right: -49vw;
     top: 0;
     background-color: rgba(1, 31, 68, 0.671);

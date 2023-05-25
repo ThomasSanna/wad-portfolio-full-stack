@@ -1,3 +1,13 @@
+.b-about {
+  filter: blur(10px);
+  transition: filter .3s;
+  z-index: -1;
+}
+
+.b-about-enter {
+  filter: none;
+}
+
 .logo-page-cont{
     width: 100%;
     display: flex;
@@ -79,6 +89,10 @@
 .contact-section{
     user-select: none;
     cursor: pointer;
+}
+
+.contact-info{
+    margin-top: -12px;
 }
 
 .liens-cont{
