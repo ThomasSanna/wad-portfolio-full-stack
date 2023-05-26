@@ -1,0 +1,54 @@
+.add-images-button{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    right: 10px;
+    top: 10px;
+    z-index: 90;
+    background-color: rgba(58, 73, 94, 0.705);
+    font-size: 5rem;
+}
+
+.add-form{
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    right: 10%;
+    top: 10%;
+    z-index: 90;
+    background-color: rgba(52, 62, 105, 0.87);
+    font-size: 5rem;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    border: 2px solid #000000;
+    display: none;
+}
+
+.input-link{
+    background-color: rgba(159, 217, 255, 0.247);
+    border: 1px solid #e7e7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.input-link::placeholder{
+    color: #d1d1d1;
+    font-size: 1rem;
+}
+
+.button-link{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: rgba(146, 183, 207, 0.247);
+}

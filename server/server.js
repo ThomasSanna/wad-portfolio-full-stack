@@ -11,6 +11,8 @@ const logged = require('./logs/logged.json');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+logged.logged = false;
+
 // Generate a salt and hash the password
 bcrypt.hash('x5D2G3y8k3LBeh', saltRounds, (err, hash) => {
   if (err) {
@@ -60,6 +62,38 @@ app.post('/loginsubmit', (req, res) => {
     }
     res.redirect('/');
   });
+});
+
+
+
+app.post('/portfolio', (req, res) => {
+  let link = req.body.link;
+  const fs = require('fs');
+  let liens = {};
+  try {
+    liens = require('../client/src/images/link.json');
+  } catch (err) {
+    console.error(err);
+  }
+  liens.links.push(link);
+  fs.writeFile('../client/src/images/link.json', JSON.stringify(liens), (err) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+  });
+  res.redirect('/portfolio');
+});
+
+
+app.get("/portfolio", (req, res) => {
+  if (logged.logged){
+    console.log("logged");
+    res.json({ isLoggedIn: true });
+  } else {
+    console.log("not logged");
+    res.json({ isLoggedIn: false });
+  }
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
