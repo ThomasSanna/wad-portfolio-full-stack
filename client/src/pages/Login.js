@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
 import "../styles/Login.css";
-import UserInfo from "../components/UserInfo";
 const Login = () => {
   return (
     <div>
@@ -9,7 +8,7 @@ const Login = () => {
       <div className="login-cont-cont">
         <fieldset className="login-fieldset">
           <legend className="login-legend">Login</legend>
-          <form className="login-form" action="/login" method="POST">
+          <form className="login-form" action="/loginsubmit" method="POST">
             <label htmlFor="username">Username</label>
             <input
               type="text"
@@ -28,7 +27,6 @@ const Login = () => {
             />
             <input type="submit" value="Login" />
           </form>
-          <UserInfo />
         </fieldset>
       </div>
     </div>
